@@ -1,0 +1,9 @@
+matplotlib==3.5.3
+pygame==2.6.1
+numpy==1.18.4
+opencv-python==4.11.0.86
+scipy
+scikit-learn
+pynput==1.7.8
+carla
+ipykernel
