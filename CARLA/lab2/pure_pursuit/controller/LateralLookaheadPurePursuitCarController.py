@@ -57,9 +57,9 @@ class LateralLookaheadPurePursuitCarController(AbstractCarController):
         # w perspektywie, w której układ współrzędnych jest zorientowany zgodnie z wektorem trajektorii
         # (tj. możemy sobie wyobrazić, że 'jest on osią Y tego układu'), chcemy obliczyć kąt między wektorem trajektorii
         # a wektorem celu, tak, aby skręt w lewo był kątem ujemnym, skręt w prawo - dodatnim, a brak konieczności skrętu - 0
-        errorAngle = ... - ...
+        alpha = ... - ...
 
-        # TODO: wzór na kąt skrętu to 2 * self.L * sin(errorAngle) / self.get_lookahead(); upewnij się, że przypisana wartość jest wyrażona w stopniach (jednostka używana w CARLA)
+        # TODO: wzór na kąt skrętu to 2 * self.L * sin(alpha) / self.get_lookahead(); upewnij się, że przypisana wartość jest wyrażona w stopniach (jednostka używana w CARLA)
         steeringTargetAngle = ...
 
         # TODO: przytnij kąt do zakresu [-maxKątSkrętu, maxKątSkrętu]
