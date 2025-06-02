@@ -16,7 +16,7 @@ from .ControllerStrategy import ControllerStrategy
 
 # Konfiguracja strategii pojazdu
 # TODO: dostosuj tą wartość w zależności od potrzeb
-controllerStrategy = ControllerStrategy.PID_PURE_PURSUIT
+controllerStrategy = ControllerStrategy.LATERAL_LOOKAHEAD_PURE_PURSUIT
 
 # ustaw na True, aby spektator podążał za autem
 SPECTATOR_FOLLOW_CAR = True
