@@ -29,6 +29,17 @@ services:
     stdin_open: true
     tty: true
 
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "python3 -c \"import carla; c=carla.Client('127.0.0.1',2000); c.set_timeout(1.0); w=c.get_world(); m=w.get_map().name; assert m\""
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+      start_period: 20s
+
   carla-viz:
     container_name: carla_viz
     restart: on-failure
