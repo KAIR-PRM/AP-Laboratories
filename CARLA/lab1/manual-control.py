@@ -11,7 +11,7 @@ print("Łączenie z CARLĄ...")
 client = carla.Client("localhost", 2000)
 client.set_timeout(10.0)
 
-print("Sprawdzanie mapy...")
+print("Sprawdzanie poprawnosci mapy...")
 
 world = client.get_world()
 print(world.get_map().name)
